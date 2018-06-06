@@ -1,5 +1,5 @@
 import React from 'react';
-import  _ from 'lodash';
+import _ from 'lodash';
 import './App.css';
 
 import store from "../store";
@@ -7,12 +7,12 @@ import Sidebar from "../components/Sidebar";
 import Main from "../components/Main";
 
 const App = () => {
-  const { contacts } = store.getState();
+  const { contacts, user, activeUserId } = store.getState();
 
   return (
     <div className="App">
-      <Sidebar contacts={_.values(contacts)}/>
-      <Main />
+      <Sidebar contacts={_.values(contacts)} />
+      <Main user={user} activeUserId={activeUserId} />
     </div>
   );
 };
