@@ -1,3 +1,6 @@
+/*
+    "Main" view shows an empty screen, but show user messages when a contact is clicked on.
+*/
 import React from "react";
 import "./Empty.css";
 

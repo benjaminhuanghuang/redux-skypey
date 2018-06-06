@@ -1,3 +1,6 @@
+/*
+  render user in the sidebar
+*/
 import React from "react";
 import "./User.css";
 

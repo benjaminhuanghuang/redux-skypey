@@ -8,10 +8,11 @@ import Main from "../components/Main";
 
 const App = () => {
   const { contacts, user, activeUserId } = store.getState();
-
+  // _.values convert object to array
+  // https://lodash.com/docs/4.17.5#values
   return (
     <div className="App">
-      <Sidebar contacts={_.values(contacts)} />
+      <Sidebar contacts={_.values(contacts)} /> 
       <Main user={user} activeUserId={activeUserId} />
     </div>
   );
