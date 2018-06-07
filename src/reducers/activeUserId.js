@@ -1,4 +1,11 @@
 // By default activeUserId will be null, means there is no active user.
+import { SET_ACTIVE_USER_ID } from "../constants/action-types";
+
 export default function activeUserId(state = null, action) {
-    return state;
+  switch (action.type) {
+    case SET_ACTIVE_USER_ID:
+      return action.payload;
+    default:
+      return state;
+  }
 }

@@ -11,7 +11,7 @@ const render = () => {
     return ReactDOM.render(<App />, document.getElementById("root"));
 };
 
-store.subscribe(render);
+store.subscribe(render);    // Important!
 render();
 
 registerServiceWorker();
