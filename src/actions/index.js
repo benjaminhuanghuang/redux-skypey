@@ -25,4 +25,4 @@ export const sendMessage = (message, userId) => ({
         message,
         userId
     }
-})
+});
