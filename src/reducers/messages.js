@@ -8,7 +8,9 @@ export default function messages(state = getMessages(10), action) {
     case SEND_MESSAGE:
       const { message, userId } = action.payload;
       const allUserMsgs = state[userId];
+      // + converted to a Number instead of a String.
       const number = +_.keys(allUserMsgs).pop();
+      debugger
       return {
         ...state,
         [userId]: {
